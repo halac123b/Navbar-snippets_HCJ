@@ -1,0 +1,13 @@
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1.5rem;
+}
+.topnav__links {
+  margin: 0;
+  padding: 0;
+}
+.topnav__item {
+  list-style-type: none;
+}/*# sourceMappingURL=style.css.map */
