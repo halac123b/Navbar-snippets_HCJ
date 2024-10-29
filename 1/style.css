@@ -4,9 +4,22 @@
   align-items: center;
   padding-block: 1.5rem;
 }
+@media (max-width: 40em) {
+  .topnav__menu {
+    position: fixed;
+    inset: 0;
+    padding: 1.5rem;
+    background-color: hsl(256, 100%, 33%);
+  }
+}
 .topnav__links {
   margin: 0;
   padding: 0;
+}
+@media (max-width: 40em) {
+  .topnav__links {
+    flex-direction: column;
+  }
 }
 .topnav__item {
   list-style-type: none;

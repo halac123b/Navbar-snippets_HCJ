@@ -4,9 +4,24 @@
   align-items: center;
   padding-block: 1.5rem;
 
+  &__menu {
+    // Set style cho các kích thước device khác nhau
+    @media (max-width: 40em) {
+      position: fixed;
+      // 1 cách viết gọn của các prop top, bottom, left, right, dùng 1 prop này set value cho cùng lúc 4 góc
+      inset: 0;
+      padding: 1.5rem;
+      background-color: hsl(256, 100%, 33%);
+    }
+  }
+
   &__links {
     margin: 0;
     padding: 0;
+
+    @media (max-width: 40em){
+      flex-direction: column;
+    }
   }
 
   &__item {
