@@ -4,7 +4,7 @@
   align-items: center;
   padding-block: 1.5rem;
 }
-@media (max-width: 40em) {
+@media (width < 40em) {
   .topnav__menu {
     position: fixed;
     inset: 0;
@@ -15,8 +15,11 @@
 .topnav__links {
   margin: 0;
   padding: 0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
-@media (max-width: 40em) {
+@media (width < 40em) {
   .topnav__links {
     flex-direction: column;
   }

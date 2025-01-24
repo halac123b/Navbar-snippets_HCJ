@@ -6,7 +6,7 @@
 
   &__menu {
     // Set style cho các kích thước device khác nhau
-    @media (max-width: 40em) {
+    @media (width < 40em) {
       position: fixed;
       // 1 cách viết gọn của các prop top, bottom, left, right, dùng 1 prop này set value cho cùng lúc 4 góc
       inset: 0;
@@ -18,13 +18,16 @@
   &__links {
     margin: 0;
     padding: 0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 
-    @media (max-width: 40em){
+    @media (width < 40em){
       flex-direction: column;
     }
   }
 
   &__item {
-    list-style-type: none;
+    list-style-type: none;  // default các item sẽ có bullet
   }
 }
